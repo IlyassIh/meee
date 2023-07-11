@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(./images/pexels-mikhail-nilov-7988079.jpg);
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 100px;
+}
+
+.logo {
+    text-decoration: none;
+    color: #A6D0DD;
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo:hover {
+    color: #4FC0D0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    color: #A6D0DD;
+    font-weight: 500;
+    position: relative;
+    
+}
+
+nav ul li a::before {
+    content: "";
+    height: 3px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #4FC0D0;
+    transition: .5s;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+.active {
+    color: #4FC0D0;
+}
+
+nav ul li a:hover {
+    color: #4FC0D0;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    transform: translateY(-50%);
+
+}
+
+.content h2 {
+    color: #A6D0DD;
+    font-size: 2.5rem;
+}
+
+.content h2 span {
+    color: #4FC0D0;
+    text-transform: capitalize;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    font-style: italic;
+}
+
+.btn {
+    background-color: #4FC0D0;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 25px;
+    color: #333;
+    font-weight: 500;
+    transition: .4s;
+    font-size: 1.2rem;
+}
+
+.btn:hover {
+    background-color: #A6D0DD;
+}
+
+.about-me {
+    min-height: 100vh;
+    width: 100%;
+    padding: 100px 200px;
+}
+
+.title {
+    color: #4FC0D0;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 3rem;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.image img {
+    width: 100%;
+    border: 2px solid #eee;
+}
+
+.me span {
+    font-weight: 600;
+    color: #2D033B;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-style: oblique;
+}
+
+.me p {
+    width: 600px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.me p b {
+    color: #4FC0D0;
+    font-style: italic;
+}
+
+hr {
+    border: dotted 6px #4FC0D0;
+    border-bottom: none;
+    width: 4%;
+    margin: 10px auto;
+}
+
+.skills {
+    padding: 100px 200px;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card {
+    width: 450px;
+    padding: 15px;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 25px;
+    margin: 20px;
+    transition: .5s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    color: #4FC0D0;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.icon i {
+    margin-right: 10px;
+}
+
+.card-infos h2 {
+    color: #4FC0D0;
+    margin: 15px auto;
+    font-size: 30px;
+}
+
+.card-infos p {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: #333;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h2 {
+    color: #A6D0DD;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    
+}
+
+footer span {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: floralwhite;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        padding: 20px 5px;
+    }
+
+    .logo {
+        font-size: 1.1rem;
+    }
+    
+    nav ul li a {
+        margin-right: 8px;
+        font-size: .8rem; 
+        font-weight: 600;
+    }
+    
+    .content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .content h2 span {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        font-size: 2rem;
+    }
+    
+    .btn {
+        padding: 7px;
+        font-size: 1.1rem;
+    }
+
+    .about-me {
+        padding: 70px 10px;
+    }
+    
+    .title {
+        margin-bottom: 30px;
+        font-size: 2rem;
+    }
+    
+    .image {
+        height: 150px;
+        width: 150px;
+    }
+       
+    .me span {
+        font-size: 1.7rem;
+        margin-bottom: 20px;
+    }
+    
+    .me p {
+        width: 100%;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    hr {
+        width: 25%;
+    }
+
+    .skills {
+        padding: 70px 30px;
+    }
+
+    
+    
+    .cards {
+        flex-direction: column;
+    }
+    
+    .card {
+        width: 100%;
+        padding: 10px;
+        margin: 30px 0;
+    }
+   
+    .icon {
+        color: #4FC0D0;
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+    
+    .icon i {
+        margin-right: 10px;
+    }
+    
+    .card-infos h2 {
+        color: #4FC0D0;
+        margin: 15px auto;
+        font-size: 30px;
+    }
+    
+    .card-infos p {
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    footer {
+        background-color: #333;
+        width: 100%;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    footer h2 {
+        color: #A6D0DD;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        
+    }
+    
+    footer span {
+        display: inline-block;
+        font-size: 1.1rem;
+        color: floralwhite;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+}
